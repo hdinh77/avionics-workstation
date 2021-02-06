@@ -6,9 +6,10 @@ let mainWindow;
  
 function createWindow() {
     mainWindow = new BrowserWindow({
-        width:800,
-        height:600,
-        show: false
+        width:1200,
+        height:900,
+        show: false,
+        icon: __dirname + '/RPL_ICO.ico'
     });
     const startURL = isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`;
  
